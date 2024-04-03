@@ -28,7 +28,7 @@ def flight_itinerary():
         formatted_itinerary = format_itinerary(index, itineraries[index])
         print(formatted_itinerary)
 
-# flight_itinerary()
+flight_itinerary()
 
 print('\n')
 
@@ -57,14 +57,12 @@ def library_times():
         except:
             pass
 
-# library_times()
+library_times()
 
 # 3. Python Loops and Tuples in Analytical Applications
 
 # Task 1: Stock Market Data Analysis
         
-# Create a function to calculate the average closing price of a specific stock symbol over all dates.
-# Ensure your solution handles cases where the stock symbol does not exist in the data.
 
 stock_data = [
     ("AAPL", "2024-01-01", 130.0),
