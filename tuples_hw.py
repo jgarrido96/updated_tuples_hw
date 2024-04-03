@@ -28,7 +28,7 @@ def flight_itinerary():
         formatted_itinerary = format_itinerary(index, itineraries[index])
         print(formatted_itinerary)
 
-# flight_itinerary()
+flight_itinerary()
 
 print('\n')
 
@@ -57,7 +57,7 @@ def library_times():
         except:
             pass
 
-# library_times()
+library_times()
 
 # 3. Python Loops and Tuples in Analytical Applications
 
@@ -109,7 +109,7 @@ def stock_analysis():
     except Exception as e:
         print(f"An error occured: {e}")
 
-# stock_analysis()
+stock_analysis()
 
 # Task 2: Event Attendance Tracker
 
