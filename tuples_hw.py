@@ -28,7 +28,7 @@ def flight_itinerary():
         formatted_itinerary = format_itinerary(index, itineraries[index])
         print(formatted_itinerary)
 
-flight_itinerary()
+# flight_itinerary()
 
 print('\n')
 
@@ -57,7 +57,7 @@ def library_times():
         except:
             pass
 
-library_times()
+# library_times()
 
 # 3. Python Loops and Tuples in Analytical Applications
 
@@ -109,4 +109,34 @@ def stock_analysis():
     except Exception as e:
         print(f"An error occured: {e}")
 
-stock_analysis()
+# stock_analysis()
+
+# Task 2: Event Attendance Tracker
+
+attendees = [
+    ("Alice", "Python Conference"),
+    ("Bob", "Python Conference"),
+    ("Charlie", "AI Summit"),
+    ("Johnny", "AI Summit"),
+    ("Tyler", "C++ TedTalk"),
+    ("David", "C++ TedTalk"),
+    ("Ya Boi JDogg", "C++ TedTalk")
+]
+
+def attendance(conference):
+    try:
+        conference_attendees = []
+        attendee_counter = 0
+        for data in attendees:
+            if conference in data:
+                conference_attendees.append(data)
+                attendee_counter += 1
+        for name, event in conference_attendees:
+            print(f"{name} attended the {event}!")
+        print(f"Total number of people that attended: {attendee_counter}")
+        
+    except Exception as e:
+        print(f"The error is: {e}")
+
+attendance("C++ TedTalk")
+
